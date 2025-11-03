@@ -63,7 +63,7 @@
 ---
 
 ## 📊 Results
-- Built a **real-time cyberattack detection model** using XGBoost.  
+- Built a **real-time cyberattack detection model** using 5 different multi model architecture.
 - Achieved **multi-class classification** for 20 attack types.  
 - Enabled **real-time inference** via AWS Lambda and **auto-retraining** using SageMaker pipelines.  
 - Demonstrated a **fully automated, scalable, cloud-based solution** for network intrusion detection.  
