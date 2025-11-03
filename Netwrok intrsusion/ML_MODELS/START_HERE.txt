@@ -1,0 +1,93 @@
+=================================================================
+  CYBER ATTACK DETECTION - ML MODELS
+  READY TO TRAIN!
+=================================================================
+
+WHAT I'VE CREATED FOR YOU:
+---------------------------
+✓ Complete ML training pipeline
+✓ Prediction API for making predictions
+✓ Multiple trained models (Decision Tree, Random Forest, XGBoost, LightGBM)
+✓ Batch prediction support
+✓ Easy-to-use API
+✓ Example scripts
+
+FILES IN THIS FOLDER:
+---------------------
+  train_models.py       - Training script
+  prediction_api.py      - AI prediction API  
+  demo_prediction.py     - Demo script
+  example_usage.py       - Usage examples
+  requirements.txt       - Dependencies
+  README.md              - Full documentation
+  QUICK_START.md         - Quick guide
+  INSTALL_PYTHON.md      - Python installation guide
+  SETUP_AND_RUN.bat      - Run this to train!
+
+HOW TO RUN:
+-----------
+
+STEP 1: Install Python (if not already installed)
+  → See INSTALL_PYTHON.md for detailed instructions
+  → Or: Go to https://www.python.org/downloads/
+  → Download Python and install
+  → IMPORTANT: Check "Add Python to PATH" during installation
+
+STEP 2: Run the setup and training script
+  → Double-click: SETUP_AND_RUN.bat
+  
+  Or manually:
+  1. Open terminal in this folder
+  2. pip install -r requirements.txt
+  3. python train_models.py
+
+STEP 3: Test the models
+  → python demo_prediction.py
+
+USAGE:
+------
+
+In your Python code:
+
+from prediction_api import predict_single_row
+
+# Your data
+row = {
+    'tcp': 0.0,
+    'udp': 0.0,
+    # ... all 49 features
+}
+
+# Get prediction
+result = predict_single_row(row, model_name='ensemble')
+print(result['interpretation'])  # 'Normal' or 'Attack'
+print(result['confidence'])      # 0.0 to 1.0
+
+QUICK START:
+------------
+1. Install Python: https://www.python.org/downloads/
+2. Double-click: SETUP_AND_RUN.bat
+3. Wait for training to complete (5-10 minutes)
+4. Run: python demo_prediction.py
+5. Use in your code: import prediction_api
+
+WHAT WILL HAPPEN:
+-----------------
+Training will:
+• Load processed_train.csv (175,341 rows)
+• Train 4 ML models
+• Save models to trained_models/ folder
+• Show performance metrics
+• Generate feature importance
+
+NEED HELP?
+----------
+→ INSTALL_PYTHON.md - Python installation
+→ QUICK_START.md - Quick setup guide
+→ README.md - Full documentation
+→ example_usage.py - Code examples
+
+=================================================================
+  READY TO GO! Install Python and run SETUP_AND_RUN.bat
+=================================================================
+
